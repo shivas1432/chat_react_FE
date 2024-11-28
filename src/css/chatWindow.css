@@ -1,0 +1,122 @@
+/* Chat Window CSS - chatWindow.css */
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 320px;
+  }
+  
+  .chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .chat-header-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  .chat-header h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .chat-description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .message-list-container {
+    flex: 1;
+    padding: 20px;
+   
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .message-input-container {
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .message-input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .message-input-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .message-input-container button:hover {
+    background-color: #45a049;
+   
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chat-window {
+      width: 100%;
+      margin: 10px;
+      margin-left: 200px;
+    }
+  
+    .chat-header h2 {
+      font-size: 1.2rem;
+    }
+  
+    .message-input-container input {
+      font-size: 0.9rem;
+    }
+  
+    .message-input-container button {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chat-header h2 {
+      font-size: 1rem;
+    }
+  
+    .message-input-container input {
+      font-size: 0.8rem;
+    }
+  
+    .message-input-container button {
+      font-size: 16px;
+    }
+  }
+  

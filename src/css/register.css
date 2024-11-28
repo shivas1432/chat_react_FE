@@ -1,0 +1,58 @@
+/* Register.css */
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.register-form {
+    background-color: #fff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for the form */
+}
+
+.register-form input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da; /* Light border color */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.register-form input:focus {
+    border-color: #80bdff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.success-message {
+    margin-top: 20px;
+    color: #28a745; /* Green color for success */
+    font-weight: bold;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #dc3545; /* Red color for error */
+}

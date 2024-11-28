@@ -1,0 +1,274 @@
+.friends-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 0;
+  left: 320px;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+  color: #ccc;
+  text-align: center;
+}
+
+.friends-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.friends-list {
+  list-style: none;
+  padding: 0;
+}
+
+.friends-list li {
+  margin: 10px 0;
+}
+
+.friend-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #40444b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friend-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fpc {
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+  padding-left: 420px;
+  height: 100vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s;
+}
+
+.profile-container {
+  flex-grow: 1;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1008px) {
+  .fpc {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .friends-container {
+    position: relative;
+    width: 300px;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .profile-container {
+    
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+  .profile-image {
+    
+    width: 70px;
+    height: 70px;
+   
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .fpc {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .friends-container {
+    position: relative;
+    width: 300px;
+   
+    height: auto;
+  }
+
+  .profile-container {
+    margin-left: 200px;
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .fpc {
+    margin-left: 150px;
+    padding-left: 0;
+  }
+
+  .friends-container {
+    left: 150px;
+  }
+}
+
+.profile-container {
+  width: 300px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  transform: translateZ(0);
+  transition: transform 0.3s;
+  overflow-y: auto;
+}
+
+.profile-container:hover {
+  transform: scale(1.02);
+}
+
+.profile-banner {
+  height: 250px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+  position: relative; /* Make the banner the relative container */
+}
+
+
+.profile-banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-top: 4px solid #007bff;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Position relative to the banner */
+  top: 60px; /* Half of the image height to place it halfway */
+  right: 20px;/* Center horizontally */
+  transform: translateX(-50%); /* Adjust centering */
+  transition: transform 0.3s;
+}
+
+.profile-image:hover {
+  transform: translateX(-50%) scale(1.05); /* Adjust hover scaling while keeping it centered */
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 26px;
+  color: #333;
+  padding: 20px;
+}
+
+.username {
+  color: #666;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+  padding: 10px;
+}
+
+strong {
+  color: #000;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e6ebf0;
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.loading, .error, .not-found {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+  color: #666;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 40px;
+  color: rgb(238, 44, 30);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: #ff5c5c; /* Change color on hover */
+}
+.profile-details {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px; /* Adjust padding for button size */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.action-button i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.action-button:hover {
+  transform: translateY(-2px); /* Raise button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.action-button:active {
+  transform: translateY(1px); /* Slightly lower on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow on active */
+}
+
