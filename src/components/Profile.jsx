@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// Removed Link import since it's not used
 import { useNavigate } from 'react-router-dom'; 
 
 const Profile = ({ userId }) => {
@@ -12,7 +11,7 @@ const Profile = ({ userId }) => {
     const fetchUser = async () => {
       if (!userId) return; // Don't fetch if userId is not available
       try {
-        const response = await fetch(`http://localhost:8081/api/profile/${userId}`);
+        const response = await fetch(`https://chat-b-00d3.onrender.com/api/profile/${userId}`); // Updated URL
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

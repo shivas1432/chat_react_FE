@@ -14,7 +14,7 @@ const Friends = ({ setSelectedUser }) => {
       setError(null);
 
       try {
-        const response = await fetch('http://localhost:8081/api/friends');
+        const response = await fetch('https://chat-b-00d3.onrender.com/api/friends'); // Updated URL
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

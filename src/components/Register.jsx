@@ -16,7 +16,7 @@ const Register = () => {
         console.log('Registering with:', { name, mobile, email }); // Log the values being sent
 
         try {
-            const response = await fetch('http://localhost:8081/api/register', {
+            const response = await fetch('https://chat-b-00d3.onrender.com/api/register', { // Updated URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

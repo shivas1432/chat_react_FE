@@ -18,7 +18,7 @@ const Login = () => {
 
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:8081/api/check-mobile', {
+            const response = await fetch('https://chat-b-00d3.onrender.com/api/check-mobile', { // Updated URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
